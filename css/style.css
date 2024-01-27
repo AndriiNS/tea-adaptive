@@ -188,7 +188,7 @@ button {
 }
 @media (max-width: 480px) {
   .logo {
-    margin-right: 80px;
+    margin-right: 50px;
   }
   .logo img {
     width: 40px;
