@@ -202,7 +202,8 @@ button {
   margin-bottom: 60px;
 }
 .tea-blog__content {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   flex-wrap: wrap;
   gap: 60px 20px;
   justify-content: space-around;
@@ -268,7 +269,8 @@ button {
 .know-more__photo {
 }
 .know-more__container {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 55px;
 }
 .know-more__left {
@@ -493,9 +495,6 @@ button {
 }
 /* #region adaptive */
 @media (max-width: 1000px) {
-  .know-more__text {
-    display: none;
-  }
   .user-search {
     margin-left: 30px;
   }
@@ -532,6 +531,37 @@ button {
     padding: 0;
   }
   .footer__contacts {
+    width: 270px;
+  }
+  .know-more__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .know-more__right {
+  }
+  .know-more__right-text {
+    width: 340px;
+  }
+  .prioritise__title {
+    margin-top: 300px;
+  }
+  .know-more__left {
+    padding: 0;
+  }
+  .know-more__text {
+    width: 340px;
+  }
+  .tea-blog__content {
+    gap: 40px;
+    padding: 0;
+  }
+  .card {
+    max-width: none; /* Знімаємо максимальну ширину */
+    max-height: none; /* Знімаємо максимальну висоту */
+    flex-direction: column; /* Розміщуємо елементи вертикально */
+    text-align: left; /* Центруємо текст по центру */
+    align-items: center; /* Центруємо елементи в центрі */
+  }
+  .card__title {
     width: 270px;
   }
 }
@@ -613,6 +643,37 @@ button {
     margin-left: auto;
     margin-right: 100px;
   }
+  .know-more__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .know-more__right {
+  }
+  .know-more__right-text {
+    width: 340px;
+  }
+  .prioritise__title {
+    margin-top: 300px;
+  }
+  .know-more__left {
+    padding: 0;
+  }
+  .know-more__text {
+    width: 340px;
+  }
+  .tea-blog__content {
+    gap: 40px;
+    padding: 0;
+  }
+  .card {
+    max-width: none; /* Знімаємо максимальну ширину */
+    max-height: none; /* Знімаємо максимальну висоту */
+    flex-direction: column; /* Розміщуємо елементи вертикально */
+    text-align: left; /* Центруємо текст по центру */
+    align-items: center; /* Центруємо елементи в центрі */
+  }
+  .card__title {
+    width: 270px;
+  }
 }
 @media (max-width: 768px) {
   .header__top {
@@ -643,6 +704,37 @@ button {
   .footer__blockquote {
     margin-left: 0;
   }
+  .know-more__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .know-more__right {
+  }
+  .know-more__right-text {
+    width: 340px;
+  }
+  .prioritise__title {
+    margin-top: 300px;
+  }
+  .know-more__left {
+    padding: 0;
+  }
+  .know-more__text {
+    width: 340px;
+  }
+  .tea-blog__content {
+    gap: 40px;
+    padding: 0;
+  }
+  .card {
+    max-width: none; /* Знімаємо максимальну ширину */
+    max-height: none; /* Знімаємо максимальну висоту */
+    flex-direction: column; /* Розміщуємо елементи вертикально */
+    text-align: left; /* Центруємо текст по центру */
+    align-items: center; /* Центруємо елементи в центрі */
+  }
+  .card__title {
+    width: 270px;
+  }
 }
 @media (max-width: 640px) {
   .container {
@@ -663,6 +755,40 @@ button {
     max-width: 376px;
     font-size: 16px;
     margin: 60px auto;
+  }
+  .know-more__container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .know-more__right {
+    top: 0;
+    padding: 0;
+  }
+  .know-more__right-text {
+    width: 340px;
+  }
+  .prioritise__title {
+    margin-top: 300px;
+  }
+  .know-more__left {
+    padding: 0;
+  }
+  .know-more__text {
+    width: 340px;
+  }
+  .tea-blog__content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 0;
+  }
+  .card {
+    max-width: none; /* Знімаємо максимальну ширину */
+    max-height: none; /* Знімаємо максимальну висоту */
+    flex-direction: column; /* Розміщуємо елементи вертикально */
+    text-align: left; /* Центруємо текст по центру */
+    align-items: center; /* Центруємо елементи в центрі */
+  }
+  .card__title {
+    width: 270px;
   }
 }
 @media (max-width: 480px) {
@@ -693,6 +819,36 @@ button {
     padding: 0;
     margin: 0;
   }
+  .footer__content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .footer__blockquote {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .footer__contacts-title {
+    margin-bottom: 30px;
+  }
+  .footer__contacts {
+    text-align: center;
+    width: 100%;
+  }
+  .footer__nav {
+    margin-top: 23px;
+  }
+  .partners__logo {
+    padding: 0;
+    margin: 0;
+    height: 20px;
+  }
+  .footer__bottom {
+    align-items: center;
+  }
+  .footer__copy {
+    margin: 0 60px;
+  }
 }
 @media (max-width: 360px) {
   .logo {
@@ -713,6 +869,29 @@ button {
   .collection__title {
     font-size: 24px;
     width: 100%;
+  }
+  .footer__company,
+  .footer__products {
+    padding: 0;
+  }
+  .footer__company {
+    margin-left: 70px;
+  }
+  .footer__blockquote {
+    margin: 0;
+    padding-top: 30px;
+  }
+  .footer__logo {
+    margin-left: 70px;
+  }
+  .footer__social {
+    margin-left: 60px;
+    width: 100%;
+  }
+  .footer__copy {
+    width: 100%;
+    margin: 0;
+    padding: 0;
   }
 }
 /* #endregion */
