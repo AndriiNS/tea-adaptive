@@ -446,3 +446,80 @@ button {
   background-color: transparent;
   color: #000;
 }
+
+.know-more {
+  background-color: #f7f2ea;
+  height: 418px;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-image: url(../images/leaf-shadow.png);
+}
+.know-more__photo {
+}
+.know-more__container {
+  display: flex;
+  gap: 55px;
+}
+.know-more__left {
+  padding-top: 100px;
+  padding-left: 100px;
+}
+.know-more__title {
+  font-family: Cormorant;
+  font-size: 40px;
+  font-weight: 400;
+  max-width: 580px;
+}
+.know-more__text {
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 150%;
+  max-width: 560px;
+}
+.know-more__right {
+  padding-top: 200px;
+}
+.know-more__right-text {
+  font-family: "Open Sans";
+  font-size: 13px;
+  font-weight: 300;
+  max-width: 560px;
+}
+.know-more__input {
+  width: 409px;
+  border-style: none;
+  background: transparent;
+  border-bottom: 1px solid #b8b58b;
+  padding: 5px;
+}
+.know-more__input::placeholder {
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 150%;
+  outline: none;
+  color: #b8b58b;
+}
+
+.right-button {
+  padding: 12px 41px;
+  gap: 10px;
+  border: 1px solid #151618;
+  cursor: pointer;
+  transition: background-color 500ms, color 500ms;
+}
+
+.right-button:hover {
+  background-color: #151618;
+  color: #fff;
+}
+
+.right-button:not(:hover) {
+  background-color: transparent;
+  color: #000;
+}
+.right__bottom {
+  display: flex;
+  gap: 10px;
+}
