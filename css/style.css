@@ -1,3 +1,4 @@
+/* #region standart setting */
 html {
   box-sizing: border-box;
 }
@@ -26,9 +27,9 @@ button {
 .container {
   max-width: 1240px;
   margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
 }
+
+/* #endregion */
 /* #region header */
 .header {
 }
@@ -39,6 +40,8 @@ button {
   justify-content: space-between;
   align-items: center;
   margin: 30px 0;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .logo {
   margin-bottom: 30px;
@@ -68,6 +71,9 @@ button {
 }
 .menu__link {
 }
+.menu__link:hover {
+  font-size: 20px;
+}
 .user-actions {
   display: flex;
   gap: 20px;
@@ -81,7 +87,7 @@ button {
 
 .main {
 }
-
+/* #region img */
 .top {
   background-image: url(../images/header-background.png);
 
@@ -121,11 +127,12 @@ button {
 }
 .blockquote__text {
 }
+/* #endregion */
 .menu-close__btn,
 .mobile-nav {
   display: none;
 }
-
+/* #region adaptive */
 @media (max-width: 1000px) {
   .user-search {
     margin-left: 30px;
@@ -146,6 +153,9 @@ button {
     margin-top: 120px;
     margin-bottom: 135px;
   }
+  .collection__content {
+    gap: 0;
+  }
 }
 @media (max-width: 844px) {
   .menu__list {
@@ -158,7 +168,7 @@ button {
     margin: 0 auto;
     display: block;
     text-align: center;
-    width: 360px;
+    width: 100%;
     padding: 60px 0;
     transition: transform 0.7s ease;
   }
@@ -233,6 +243,13 @@ button {
   .blockquote {
     max-width: 640px;
   }
+  .collection__content {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .clients__content {
+    padding-bottom: 86px;
+  }
 }
 @media (max-width: 640px) {
   .container {
@@ -272,6 +289,17 @@ button {
   .text {
     font-size: 13px;
   }
+  .collection__img {
+    max-width: 150px;
+    max-height: 150px;
+  }
+
+  .clients__content,
+  .clients__text {
+    gap: 0;
+    padding: 0;
+    margin: 0;
+  }
 }
 @media (max-width: 360px) {
   .logo {
@@ -289,4 +317,132 @@ button {
     font-size: 16px;
     margin: 60px auto;
   }
+  .collection__title {
+    font-size: 24px;
+    width: 100%;
+  }
+}
+/* #endregion */
+/* #region collections + clients */
+.collection {
+  margin-bottom: 150px;
+}
+.collection__title {
+  font-family: Cormorant;
+  font-size: 40px;
+  font-weight: 400;
+  text-align: center;
+}
+.collection__content {
+  display: flex;
+  gap: 0 40px;
+  text-align: center;
+}
+.collection__img {
+  max-width: 208px;
+  max-height: 208px;
+  width: 100%;
+}
+.collection__text {
+  font-family: Cormorant;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.clients {
+  background-color: #f7f2ea;
+  min-width: 100%;
+  margin-bottom: 150px;
+}
+.clients__title {
+  font-family: Cormorant;
+  font-size: 40px;
+  font-weight: 400;
+  text-align: center;
+  padding: 60px 0;
+}
+.clients__content {
+  display: flex;
+  gap: 26px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 60px;
+}
+.clients__text {
+  max-width: 280px;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 300;
+}
+.clients__name {
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-weight: 600;
+}
+/* #endregion */
+.tea-blog {
+}
+
+.tea-blog__title {
+  text-align: center;
+  font-family: Cormorant;
+  font-size: 40px;
+  font-weight: 400;
+  margin-bottom: 60px;
+}
+.tea-blog__content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px 20px;
+  justify-content: space-around;
+}
+.card {
+  max-width: 460px;
+  max-height: 153px;
+  display: flex;
+  gap: 20px;
+}
+.card__title {
+  font-family: Cormorant;
+  font-size: 24px;
+  font-weight: 400;
+  margin: 0;
+  width: 210px;
+}
+.card__subtitle {
+  font-family: "Open Sans";
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.card__more-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.card__bottom {
+  gap: 0 8px;
+  display: flex;
+}
+.tea-blog__button {
+  display: flex;
+  margin: 0 auto;
+  padding: 12px 41px;
+  gap: 10px;
+  border: 1px solid #151618;
+  margin-top: 60px;
+  margin-bottom: 120px;
+  cursor: pointer;
+  transition: background-color 500ms, color 500ms;
+}
+
+.tea-blog__button:hover {
+  background-color: #151618;
+  color: #fff;
+}
+
+.tea-blog__button:not(:hover) {
+  background-color: transparent;
+  color: #000;
 }
