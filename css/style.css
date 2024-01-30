@@ -1,11 +1,13 @@
 /* #region standart setting */
 html {
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 body {
   color: #151618;
   padding: 0;
   margin: 0;
+  overflow-x: hidden;
 }
 *,
 *::after,
@@ -372,6 +374,7 @@ button {
   padding-bottom: 40px;
 }
 /* #endregion */
+/* #region footer */
 .footer {
   padding: 100px 0 20px;
   background-color: #f7f2ea;
@@ -493,6 +496,7 @@ button {
 }
 .partners__item {
 }
+/* #endregion */
 /* #region adaptive */
 @media (max-width: 1000px) {
   .user-search {
@@ -555,11 +559,11 @@ button {
     padding: 0;
   }
   .card {
-    max-width: none; /* Знімаємо максимальну ширину */
-    max-height: none; /* Знімаємо максимальну висоту */
-    flex-direction: column; /* Розміщуємо елементи вертикально */
-    text-align: left; /* Центруємо текст по центру */
-    align-items: center; /* Центруємо елементи в центрі */
+    max-width: none;
+    max-height: none;
+    flex-direction: column;
+    text-align: left;
+    align-items: center;
   }
   .card__title {
     width: 270px;
@@ -582,6 +586,8 @@ button {
   }
   .menu__list.menu__list--open {
     transform: translateY(0%);
+    position: fixed;
+    z-index: 2;
   }
   .menu-close__btn {
     position: absolute;
@@ -665,11 +671,11 @@ button {
     padding: 0;
   }
   .card {
-    max-width: none; /* Знімаємо максимальну ширину */
-    max-height: none; /* Знімаємо максимальну висоту */
-    flex-direction: column; /* Розміщуємо елементи вертикально */
-    text-align: left; /* Центруємо текст по центру */
-    align-items: center; /* Центруємо елементи в центрі */
+    max-width: none;
+    max-height: none;
+    flex-direction: column;
+    text-align: left;
+    align-items: center;
   }
   .card__title {
     width: 270px;
@@ -726,11 +732,11 @@ button {
     padding: 0;
   }
   .card {
-    max-width: none; /* Знімаємо максимальну ширину */
-    max-height: none; /* Знімаємо максимальну висоту */
-    flex-direction: column; /* Розміщуємо елементи вертикально */
-    text-align: left; /* Центруємо текст по центру */
-    align-items: center; /* Центруємо елементи в центрі */
+    max-width: none;
+    max-height: none;
+    flex-direction: column;
+    text-align: left;
+    align-items: center;
   }
   .card__title {
     width: 270px;
@@ -750,6 +756,9 @@ button {
   }
   .text {
     font-size: 24px;
+  }
+  .collection__content {
+    padding: 0;
   }
   .blockquote {
     max-width: 376px;
@@ -781,11 +790,11 @@ button {
     padding: 0;
   }
   .card {
-    max-width: none; /* Знімаємо максимальну ширину */
-    max-height: none; /* Знімаємо максимальну висоту */
-    flex-direction: column; /* Розміщуємо елементи вертикально */
-    text-align: left; /* Центруємо текст по центру */
-    align-items: center; /* Центруємо елементи в центрі */
+    max-width: none;
+    max-height: none;
+    flex-direction: column;
+    text-align: left;
+    align-items: center;
   }
   .card__title {
     width: 270px;
